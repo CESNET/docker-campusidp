@@ -2,6 +2,7 @@ ARG DEB_VERSION="bullseye"
 ARG PHP_VERSION="7.4"
 ARG COMPOSER_VERSION="2"
 ARG NODE_VERSION="16"
+ARG GITHUB_TOKEN
 
 FROM mlocati/php-extension-installer AS extension_installer
 FROM composer:${COMPOSER_VERSION} as composer
@@ -25,12 +26,15 @@ RUN apt-get update -y && \
     install-php-extensions exif gmp imagick intl ldap memcached opcache pdo_mysql pdo_pgsql zip
 
 FROM base AS ssp_builder
+ARG GITHUB_TOKEN
+
 # https://simplesamlphp.org/docs/stable/simplesamlphp-install-repo
 # add composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 RUN apt update -y \
     && apt install -y --no-install-recommends git \
+    && git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/" \
     && mkdir /var/ssp
 COPY composer.json /var/ssp/
 RUN cd /var/ssp \
