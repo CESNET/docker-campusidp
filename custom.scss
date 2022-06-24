@@ -1,0 +1,38 @@
+@import "bootstrap/scss/functions";
+
+// adjust these variables to change colors:
+// $primary: header, preferred submit button
+// $secondary: non-preferred submit button, footer
+// $dark: preferred components text and borders
+// $text-muted: secondary components text and borders
+// $body: body background
+// $light: centered box background
+// $danger: error messages
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+
+.border-muted {
+  border-color: $text-muted !important;
+}

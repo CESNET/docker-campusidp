@@ -14,11 +14,11 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/melanger/simplesamlphp-module-campusmultiauth.git"
+            "url": "https://github.com/cesnet/simplesamlphp-module-campusmultiauth.git"
         },
         {
             "type": "git",
-            "url": "https://github.com/melanger/simplesamlphp-module-campususerpass.git"
+            "url": "https://github.com/cesnet/simplesamlphp-module-campususerpass.git"
         }
     ]
 }
