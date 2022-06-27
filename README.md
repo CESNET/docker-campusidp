@@ -54,6 +54,11 @@ To provide configuration files, mount folders or files into the SimpleSAMLphp in
 * /var/ssp/vendor/simplesamlphp/simplesamlphp/config/
 * /var/ssp/vendor/simplesamlphp/simplesamlphp/metadata/
 
+Check out [SimpleSAMLphp documentation](https://simplesamlphp.org/docs/1.19/index.html) for more details. There are some options used or required by campusmultiauth:
+
+* `"usenewui" => true` is required in `config/config.php`
+* you can use `"session.rememberme.enable" => true` to enable the "remember me" function
+
 ## Customize Bootstrap
 
 This image overrides Bootstrap in the campusmultiauth module with a custom version, which excludes some unused parts of Bootstrap and may include color customizations and other enhancements.
