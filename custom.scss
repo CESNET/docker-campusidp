@@ -1,12 +1,13 @@
 @import "bootstrap/scss/functions";
 
 // adjust these variables to change colors:
-// $primary: header, preferred submit button
+$primary: #30BBE0;
+$secondary: #5C636A;
 // $secondary: non-preferred submit button, footer
 // $dark: preferred components text and borders
 // $text-muted: secondary components text and borders
-// $body: body background
-// $light: centered box background
+$body: #FFFFFF;
+$light: #FFFFFF;
 // $danger: error messages
 
 @import "bootstrap/scss/variables";

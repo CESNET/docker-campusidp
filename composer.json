@@ -1,11 +1,11 @@
 {
     "require": {
         "simplesamlphp/simplesamlphp": "~1.19.5",
-        "cesnet/simplesamlphp-module-campusmultiauth": "^1.0.0",
-        "cesnet/simplesamlphp-module-campususerpass": "^1.0.0",
+        "cesnet/simplesamlphp-module-campusmultiauth": "dev-main",
+        "cesnet/simplesamlphp-module-campususerpass": "dev-main",
         "predis/predis": "^1.1.10"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "config": {
         "allow-plugins": {
             "simplesamlphp/composer-module-installer": true
