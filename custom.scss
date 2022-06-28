@@ -36,3 +36,9 @@
 .border-muted {
   border-color: $text-muted !important;
 }
+
+.list-group-item.active {
+    background-color: $body;
+    border-color: $body;
+    color: $dark;
+}
