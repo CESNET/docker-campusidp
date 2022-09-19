@@ -1,5 +1,7 @@
 # docker-campusidp
 
+**REPOSITORY HAS BEEN MOVED TO: https://gitlab.ics.muni.cz/perun-proxy-aai/containers/docker-campusidp**
+
 Docker image with complete campus IdP, including [SimpleSAMLphp](https://simplesamlphp.org/), [module campusmultiauth](https://github.com/cesnet/simplesamlphp-module-campusmultiauth) and [module campususerpass](https://github.com/cesnet/simplesamlphp-module-campususerpass).
 
 The image is based on the [official PHP docker image](https://hub.docker.com/_/php) with [PHP-FPM](https://php-fpm.org/).
